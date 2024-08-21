@@ -1,6 +1,6 @@
-<h1 align="center">Reserva Lab</h1>
+<h1 align="center">Logi Lab</h1>
 
-<p align="center">App de EAMT ( Estudos Avançados de Matemática e suas Tecnologias )</p>
+<p align="center">App de EAMAT ( Estudos Avançados de Matemática e suas Tecnologias )</p>
 
 <p align="center">
 	<a href="#tecnologias">Tecnologias</a>&nbsp;&nbsp;&#124;&nbsp;&nbsp;
@@ -46,6 +46,9 @@ Com container Docker:
 ## Autores
 
 <ul>
+	<li>André Nóbrega de Moraes</li>
+	<li>Eduarda de Castro Rodrigues</li>
+	<li>Fernando Ferreira da Silva</li>
 	<li>Giovanne Monteiro de Melo</li>
 	<li>Ysabela da Silva Souza</li>
 </ul>
