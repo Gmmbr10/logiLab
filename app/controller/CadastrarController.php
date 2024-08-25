@@ -12,8 +12,7 @@ class CadastrarController extends Controller
     {
         if (isset($_POST["btnCad"])) {
 
-            $this->banco = $this->pdo();
-            $this->model = $this->loadModel("Cadastrar",$this->banco);;
+            $this->model = $this->loadModel("Cadastrar",$this->pdo());;
             $this->resultadoModel = $this->model->getResultados();
             $this->formData = $this->model->getFormDados();
         }

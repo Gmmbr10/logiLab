@@ -8,7 +8,7 @@ class LoginModel
     private $resultado;
     private $pdo;
 
-    public function __construct(PDO $banco)
+    public function __construct(PDO $conexao)
     {
 
         $this->formDados = filter_input_array(INPUT_POST, FILTER_DEFAULT);
@@ -22,7 +22,7 @@ class LoginModel
             return;
         }
 
-        $this->pdo = $banco;
+        $this->pdo = $conexao;
         $sql = $this->pdo->prepare("SELECT * FROM usuarios WHERE email = ? LIMIT 1");
         $sql->execute(array($this->formDados["email"]));
 

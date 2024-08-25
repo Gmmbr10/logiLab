@@ -9,7 +9,7 @@ class CadastrarModel
     private $tamanhoMinimoSenha = 5;
     private $pdo;
 
-    public function __construct(PDO $banco)
+    public function __construct(PDO $conexao)
     {
 
         $this->formDados = filter_input_array(INPUT_POST, FILTER_DEFAULT);
@@ -23,7 +23,7 @@ class CadastrarModel
             return;
         }
 
-        $this->pdo = $banco;
+        $this->pdo = $conexao;
 
         if ($this->verificarEmail()) {
 
